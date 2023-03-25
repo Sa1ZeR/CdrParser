@@ -41,7 +41,7 @@ public class DefaultTariffCalculator implements BaseCalculator {
                 } else price = durationInMinute * OUTGOING_PRICE;
             } else price = INCOMING_PRICE;
 
-            freeMinutes-=duration;
+            freeMinutes-=durationInMinute;
 
             if(freeMinutes < 0)
                 freeMinutes = 0;
